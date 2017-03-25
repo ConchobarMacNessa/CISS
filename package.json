@@ -1,0 +1,39 @@
+{
+  "name": "ciss",
+  "version": "1.0.0",
+  "description": "ISS Tracker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "tape tests/test.js | tap-spec",
+    "coverage": "istanbul cover tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConchobarMacNessa/CISS.git"
+  },
+  "author": "Alice EBC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConchobarMacNessa/CISS/issues"
+  },
+  "homepage": "https://github.com/ConchobarMacNessa/CISS#readme",
+  "devDependencies": {
+    "codecov": "^2.1.0",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "faucet": "0.0.1",
+    "istanbul": "^0.4.5",
+    "nodemon": "^1.11.0",
+    "shot": "^3.4.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "env2": "^2.1.1",
+    "request": "^2.81.0"
+  }
+}
