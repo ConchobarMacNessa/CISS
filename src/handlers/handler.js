@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const serveAPI = require('./serveAPI.js');
 
 const handlers = module.exports = {};
 
@@ -42,3 +43,5 @@ handlers.pageNotFound = (request, response) => {
   response.write('<h1>404 Page requested cannot be found</h1>');
   response.end();
 };
+
+handlers.serveAPI = serveAPI;

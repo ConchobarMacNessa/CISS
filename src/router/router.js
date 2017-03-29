@@ -7,7 +7,7 @@ module.exports = function (request, response) {
     handlers.serveLanding(request, response);
   } else if (extension === 'css' || extension === 'js' || extension === 'html' || extension === 'ico' || extension === 'svg') {
     handlers.servePublic(request, response);
-  } else if (url.indexOf('api') !== -1) {
+  } else if (url.indexOf('api/iss') !== -1) {
     handlers.serveAPI(request, response);
   } else {
     handlers.pageNotFound(request, response);
